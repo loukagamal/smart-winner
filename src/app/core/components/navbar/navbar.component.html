@@ -1,0 +1,129 @@
+<div class="container-fluid m-0 p-0">
+  <div class="d-md-none nav-md">
+    <div class="nav-bar">
+      <div class="menu">
+      <div class="dropdown">
+        <button class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+          aria-expanded="false"> 
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li  *ngFor="let index of menu"><a class="dropdown-item" href="#">{{index.name}}</a></li>
+      
+        </ul>
+      </div>
+        
+      </div>
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="" />
+      </div>
+      <div class="but-user">
+        <div class="dropdown">
+          <button class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </button>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li *ngFor="let index of icon"><a class="dropdown-item" href="#"><img src="{{index.img}}" alt=""></a></li>
+        <li><div class="language">
+          <div class="imega">
+            <img src="{{ imgUrl }}" alt="" />
+          </div>
+          <div class="lang">English</div>
+          <div class="but">
+            <div class="dropdown">
+              <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+              </a>
+        
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">English-2</a></li>
+                <li><a class="dropdown-item" href="#"> English-3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div></li>
+          </ul>
+        </div>
+     
+      </div>
+    </div>
+    <div class="welcome-user">
+      <div class="user">
+        <div class="Welcome">Welcome {{ user }} —</div>
+        <div class="logout">Logout</div>
+      </div>
+      <div class="your-balance">
+        <div class="balance">Your balance:</div>
+        <div class="balance-num">{{ balance }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="d-none d-md-block">
+    <div class="nav-bar-saction">
+      <div class="left-saction">
+        <div class="logo">
+          <img src="assets/img/logo.svg" alt="" />
+        </div>
+        <div class="welcome-user">
+          <div class="user">
+            <div class="Welcome">Welcome {{ user }} —</div>
+            <div class="logout">Logout</div>
+          </div>
+          <div class="your-balance">
+            <div class="balance">Your balance:</div>
+            <div class="balance-num">{{ balance }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-saction">
+        <div class="sociel-icon">
+          <div class="icon" *ngFor="let index of icon">
+            <a href="">
+              <img src="{{ index.img }}" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="language">
+          <div class="imega">
+            <img src="{{ imgUrl }}" alt="" />
+          </div>
+          <div class="lang">English</div>
+          <div class="but">
+            <div class="dropdown">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">English-2</a></li>
+                <li><a class="dropdown-item" href="#"> English-3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <div class="link">
+        <ul class="list-item" *ngFor="let index of menu">
+          <li>
+            <a class="list" href="#">{{ index.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="account">
+        <div class="my">My Account</div>
+      </div>
+    </div>
+  </div>
+</div>

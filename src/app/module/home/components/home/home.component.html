@@ -1,0 +1,19 @@
+<div class="container-fluid p-0 m-0">
+    <div class="img-home">
+        <img src="assets/img/home.svg" alt="img home">
+    </div>
+    <div class="card-detail">
+        <div class="card" *ngFor="let index of card">
+            <div class="img-icon">
+                <img src="{{index.img}}" alt="img icon">
+            </div>
+            <div class="right-section">
+                <div class="top-section">
+                    <div class="titel">{{index.titel}}</div>
+                    <div class="link"><a href="">{{index.link}}</a></div>
+                </div>
+                <div class="paragraph">{{index.paragraph}}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,82 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Importing Bootstrap SCSS file. */
-@import '~ng-zorro-antd/ng-zorro-antd.min.css';
-
-
-html,
 body {
   height: 100%;
-  --primary-color: #cf964c;
-  --primary-color-hover: #c18434;
+  --primary-color: #E5E5E5;
+  --second-color: #FFFFFF;
   --antd-wave-shadow-color: #cf964c;
 
-  --grey: #e6e6e6;
-  --dark: #323232;
+  --red: #F30000;
+  --black: #000000;
   --white: #ffffff;
-  --light-grey: #f4f2ef;
-  --very-light-grey: #f7f7f7;
+  --blue: #0061A3;
+  --drey: #5F5F5F;
 
-  --grey1: #515151;
+  --grey1: #e0e0e0;
   --grey2: #737373;
   --grey3: #a1a1a1;
   --grey4: #414141;
   --dark-black: #212121;
-}
-
-.font-roboto {
-  font-family: Roboto;
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif, 'Helvetica Neue', sans-serif;
-}
-
-.light-theme {
-  --header_background: var(--white);
-  --header_border: var(--grey);
-  --header_button_background: var(--white);
-  --header_button_border: var(--grey);
-  --header_button_text: var(--dark);
-
-  --footer-text: var(--dark);
-
-  --form-input-background: var(--white);
-  --form-input-border: #d9d9d9;
-  --form-input-placeholder: var(--dark);
-
-  --categories-background: var(--very-light-grey);
-  --select-border: #d9d9d9;
-  --select-text: var(--dark-black);
-
-  --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  --card-background: var(--white);
-  --card-select: var(--white);
-
-  --collaps-background: var(--very-light-grey);
-}
-
-.dark-theme {
-  --header_background: var(--dark);
-  --header_border: var(--dark-black);
-  --header_button_background: var(--grey4);
-  --header_button_border: var(--grey);
-  --header_button_text: var(--light-grey);
-
-  --footer-text: var(--light-grey);
-
-  --form-input-background: var(--grey1);
-  --form-input-border: var(--grey3);
-  --form-input-placeholder: var(--light-grey);
-
-  --categories-background: var(--grey4);
-  --select-border: var(--grey);
-  --select-text: var(--light-grey);
-
-  --card-shadow: 0px 5px 20px rgba(15, 15, 15, 0.1);
-  --card-background: #515151;
-  --card-select: var(--grey2);
-
-  --collaps-background: var(--grey1);
 }
